@@ -1,6 +1,6 @@
 {
   "name": "mongo-collections-dumper",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "Easily dump and restore small mongo collections without using mongodump. Useful for fixtures reloading.",
   "main": "./dist/index.js",
   "scripts": {
@@ -10,14 +10,14 @@
   },
   "author": "",
   "dependencies": {
-      "ejson": "^2.1.2"
+      "ejson": "^2.1.2",
+      "babel-core": "^6.20.0",
+      "babel-polyfill": "^6.20.0"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",
-    "babel-core": "^6.20.0",
     "babel-loader": "^6.2.9",
     "babel-plugin-transform-object-rest-spread": "^6.20.2",
-    "babel-polyfill": "^6.20.0",
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-stage-0": "^6.16.0"
   }
