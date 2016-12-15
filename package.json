@@ -1,6 +1,6 @@
 {
   "name": "mongo-collections-dumper",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Easily dump and restore small mongo collections without using mongodump. Useful for fixtures reloading.",
   "main": "./dist/index.js",
   "scripts": {
