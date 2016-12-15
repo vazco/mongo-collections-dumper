@@ -1,4 +1,3 @@
-import Promise from 'promise';
 import fs from 'fs';
 import EJSON from 'ejson';
 
