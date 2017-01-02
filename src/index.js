@@ -1,8 +1,6 @@
 import fs from 'fs';
 import EJSON from 'ejson';
 
-require("babel-core/register");
-require("babel-polyfill");
 
 exports.dump = async (params, callback) => {
     let {storage, db} = params;

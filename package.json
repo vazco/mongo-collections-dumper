@@ -1,41 +1,34 @@
 {
   "name": "mongo-collections-dumper",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Easily dump and restore small mongo collections without using mongodump. Useful for fixtures reloading.",
   "main": "./dist/index.js",
   "scripts": {
-    "prepublish": ". ./scripts/prepublish.sh",
-    "watch": ". ./scripts/watch.sh",
-    "lint": "eslint ./src",
-    "lintfix": "eslint ./src --fix",
-    "testonly": "mocha $npm_package_options_mocha",
-    "test": "npm run lint && npm run testonly",
-    "test-watch": "npm run testonly -- --watch --watch-extensions js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src --out-dir dist",
+    "prepublish": "npm run build",
+    "watch": ". ./scripts/watch.sh"
   },
   "author": "",
   "dependencies": {
-    "babel-runtime": "6.x.x",
-    "ejson": "^2.1.2",
-    "promise": "^7.1.1"
+      "ejson": "^2.1.2"
   },
   "devDependencies": {
-    "babel-cli": "6.x.x",
-    "babel-core": "6.x.x",
-    "babel-eslint": "^7.1.1",
-    "babel-plugin-transform-class-properties": "^6.9.1",
-    "babel-plugin-transform-runtime": "6.x.x",
-    "babel-polyfill": "6.x.x",
-    "babel-preset-es2015": "6.x.x",
-    "babel-preset-stage-2": "6.x.x",
-    "chai": "3.x.x",
-    "eslint": "^3.6.1",
-    "eslint-config-vazco": "^2.1.0",
-    "eslint-plugin-babel": "^3.2.0",
-    "eslint-plugin-import": "^1.16.0",
-    "eslint-plugin-react": "^6.7.1",
-    "eslint-plugin-vazco": "^1.0.0",
-    "mocha": "2.x.x",
-    "nodemon": "1.7.x",
-    "pre-commit": "^1.1.3"
+      "babel-cli": "6.x.x",
+      "babel-eslint": "^7.1.1",
+      "babel-plugin-transform-class-properties": "^6.x.x",
+      "babel-plugin-transform-runtime": "6.x.x",
+      "babel-plugin-transform-object-assign": "^6.x.x",
+      "babel-plugin-transform-react-inline-elements": "^6.x.x",
+      "babel-preset-es2015": "6.x.x",
+      "babel-preset-stage-2": "6.x.x",
+      "babel-preset-react": "^6.x.x",
+      "babel-runtime": "6.x.x",
+      "eslint": "^3.6.1",
+      "eslint-config-vazco": "^2.1.0",
+      "eslint-plugin-babel": "^3.2.0",
+      "eslint-plugin-import": "^1.16.0",
+      "eslint-plugin-react": "^6.7.1",
+      "eslint-plugin-vazco": "^1.0.0"
   }
 }
