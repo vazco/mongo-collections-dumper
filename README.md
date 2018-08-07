@@ -6,8 +6,8 @@
 
 This is lightweight utility that allows you to easily dump and restore mongo collections. No mongodump dependency. Data can be stored in memory or on disk. Useful for fixtures reload.
 
-# Usage
-## With memory storage
+## Usage
+### With memory storage
 ```javascript
 import MongoDumper from 'mongo-collections-dumper';
 
@@ -36,7 +36,7 @@ describe('Users', () => {
 
 ```
 
-## With file storage
+### With file storage
 ```javascript
 import MongoDumper from 'mongo-collections-dumper';
 
@@ -66,7 +66,7 @@ if (databaseIsEmpty()) {
 }
 ```
 
-### License
+## License
 
 <img src="https://vazco.eu/banner.png" align="right">
 
