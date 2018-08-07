@@ -1,4 +1,9 @@
-# Mongo collections dumper
+<h1 align="center">
+    <a href="https://github.com/vazco">vazco</a>/Mongo Collections Dumper
+</h1>
+
+&nbsp;
+
 This is lightweight utility that allows you to easily dump and restore mongo collections. No mongodump dependency. Data can be stored in memory or on disk. Useful for fixtures reload.
 
 # Usage
@@ -60,3 +65,9 @@ if (databaseIsEmpty()) {
 
 }
 ```
+
+### License
+
+<img src="https://vazco.eu/banner.png" align="right">
+
+**Like every package maintained by [Vazco](https://vazco.eu/), Mongo Collections Dumper is [MIT licensed](https://github.com/vazco/uniforms/blob/master/LICENSE).**
